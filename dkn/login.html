@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>登录</title>
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css"/>
+    <link rel="apple-touch-icon" href="images/icon-152x152.png">
+    <link rel="icon" href="images/icon-152x152.png">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <div class="cart_header">
+    	<div class="cart_logo">
+    		<a href="index.html"><img src="images/logo.png"/></a>
+    	</div>
+    	<div class="cart_help">
+    		<p>
+    			<i class="fa fa-question-circle-o fa-2x"></i>
+    			帮助
+    		</p>
+    		<ul>
+    			<li>
+    				<i class="fa fa-unlock-alt"></i>
+    				100%
+    			</li>
+    			<li>
+    				受保护
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+	
+	<div class="nav">
+		
+		<ul>
+			<li>
+				<i class="fa fa-shopping-cart fa-2x"></i>
+				<b> > </b>
+			</li >
+			<li class="active">
+				<span>1</span>身份验证
+				
+			</li>
+			<li>
+				<span>2</span>创建账户
+				<b> > </b>
+			</li>
+			<li>
+				<span>3</span>支付
+				<b> > </b>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="main">
+		<div class="login">
+			<div class="login_left">
+				<div class="login_left_zz"></div>
+				<div class="login_left_cont">
+					<h2>登录</h2>
+					<ul>
+						<form>
+							<li>请输入用户名和密码登录，立即享受会员福利。</li>
+							<li class="input_style">
+								<input id="login_user" name="login_user" type="text" placeholder="邮箱/手机号码">
+								<p class="prompt_info">请输入正确的手机号码与邮箱</p>
+							</li>
+							<li class="input_style">
+								<input id="login_pwd" name="login_pwd" type="password" placeholder="密码">
+								<p class="prompt_info">必须填</p>
+							</li>
+							<li><a href="javascript:;">忘记密码</a></li>
+							<li><button id="login_btn" type="submit">登录</button></li>
+							<li>
+								<input id="remember_me" name="remember_me" type="checkbox" >
+								<label for="remember_me">记住我</label>
+							</li>
+						</form>					
+					</ul>
+				</div>
+				
+			</div>
+			<div class="login_right">
+				<h2>登录</h2>
+				<p>迪卡侬将尽一切可能保护您的个人信息</p>
+				<a href="register.html">注册</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

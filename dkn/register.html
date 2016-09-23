@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>注册</title>
+    <link type="text/css" rel="stylesheet" href="css/public.css" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css"/>
+    <link rel="apple-touch-icon" href="images/icon-152x152.png">
+    <link rel="icon" href="images/icon-152x152.png">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/reg.js"></script>
+</head>
+<body>
+    <div class="cart_header">
+    	<div class="cart_logo">
+    		<a href="index.html"><img src="images/logo.png"/></a>
+    	</div>
+    	<div class="cart_help">
+    		<p>
+    			<i class="fa fa-question-circle-o fa-2x"></i>
+    			帮助
+    		</p>
+    		<ul>
+    			<li>
+    				<i class="fa fa-unlock-alt"></i>
+    				100%
+    			</li>
+    			<li>
+    				受保护
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+	
+	<div class="nav">
+		<ul>
+			<li>
+				<i class="fa fa-shopping-cart fa-2x"></i>
+				<b> > </b>
+			</li >
+			<li>
+				<span>1</span>身份验证
+				<b> > </b>
+			</li>
+			<li class="active">
+				<span>2</span>创建账户
+				
+			</li>
+			<li>
+				<span>3</span>支付
+				<b> > </b>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="main">
+		<div class="register">
+			<h2>创建账户</h2>
+			<p>请根据步骤输入您的信息，来创建您的迪卡侬账户</p>
+			<form id="register_form">
+				<div class="register_info">
+					<h4>登录信息</h4>
+					<p>请输入您的邮箱或手机号码，它们将作为您的登录账户。如果您使用手机号码，将收到一封短信验证。</p>
+					<div class="input_box">
+						<h5>电子邮箱/手机号码 *</h5>
+						<input type="text" id="tel_btn" name="tel_btn">
+						<i class="fa fa-check"></i>
+						<p>此项为必填项</p>
+					</div>
+				</div>
+
+				<div  class="register_info">
+					<h2>个人信息</h2>
+					<ul>
+						<li>
+							<input type="radio" name="sex" id="man">
+							<label for="man">男士 </label>
+							<input type="radio" name="sex" id="women">
+							<label for="women">女士 </label>
+							<p>必须选择您的性别</p>
+						</li>  
+						<li>
+							<h5>
+								<span>姓 *</span>  <span>名 *</span>
+							</h5>
+							<div>
+								<input type="text" name="s_name" id="s_name">
+								<input type="text" name="p_name" id="p_name">
+							</div>
+							<p>此项为必填项</p>
+						</li>
+						<li>
+							<h5>
+								<span>密码 *</span>  <span>确认密码 *</span>
+							</h5>
+							<div>
+								<input type="password" name="pwd" id="pwd">
+								<i class="fa fa-check pwd_info"></i>
+								<input type="password" name="qr_pwd" id="qr_pwd">
+							</div>
+							<p>此项为必填项</p>
+						</li>
+						<li>
+							<h5>
+								邮箱地址
+							</h5>
+							<div>
+								<input type="text" name="email" id="email">		
+								<i class="fa fa-check email_info"></i>
+							</div>
+							<p>此项为必填项</p>
+						</li>
+						<li>
+							<input id="auto_login" name="auto_login" type="checkbox" >
+							<label for="auto_login">自动登录</label>
+						</li>
+					</ul>
+					
+					<div class="creat_user">
+						<input type="submit" id="creat_user" value="创建账户">
+						<br>
+						<span>
+							我已阅读并同意 条款及细则 *
+						</span>
+					</div>
+
+					<div class="bottom">
+						<h5>创建账户，必须填写</h5>
+	您的数据被用于迪卡侬股份有限公司及其数据质量控制中心以及所有的迪卡侬电子商务公司。您的数据将被用于发送电子邮件、研究、统计数据以及市场营销行为，以便您能收到基于您运动喜好而定制的个性化产品或服务，并能够对我们的产品和服务进行监控。根据1976年1月6日的数据保护法修订条例，您有权使用、修改或拒绝您的数据通过电子邮件或邮寄的形式被发送？
+					</div>
+
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
