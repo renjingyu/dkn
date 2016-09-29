@@ -1,0 +1,63 @@
+/*header*/
+h1,h2,h3,h4,h5,h6{font-weight: 100;}
+.header{height: 60px;line-height: 60px;overflow: -hidden;width: 1135px;margin: 0 auto;padding: 10px 0;}
+.header a{display: inline-block;}
+.header img{vertical-align: middle;}
+.logo{float: left;}
+
+.nav{float: left;width: 935px;padding-left: 20px;}
+.nav a{padding: 0 15px;display: block;float: left;}
+.nav a.active{background: #847057;color: #fff;position: relative;}
+.down{position: absolute;opacity:0;background: #FFFFFF;z-index: 1;    height: 300px;width: 562px;top: 70px;border-top: 2px solid #d9d9d9;box-shadow: 0 0 13px rgba(0,0,0,0.1);left: 235px;}
+.down ul{width: 562px;padding: 30px 35px;height: 180px;}
+.down ul li{overflow: hidden;width: 88%;height: 33px;line-height: 33px;}
+.cart{float: left;}
+.down ul li a{display: inline-block;width: 25%;}
+.cart i{background: #777;display: inline-block;color: #fff;font-weight: bold;width: 30px;height: 20px;text-align: center;line-height: 20px;border-radius: 20px;}
+/*header*/
+
+/*main*/
+.main_bg{background: #f3cfc6;}
+.main{width: 1200px;margin: 0 auto;overflow: hidden;padding: 60px 0 44px 0;}
+.main_left{float: left;width: 542px;height: 690px;}
+.main_left img{width: 100%;}
+.main_right{float: left;padding:0 30px;    max-width: 594px;}
+
+#p-name{font-size: 24px;color: #847057;margin-top: 82px;}
+#p-name a{color: #847057;}
+#p-name a:hover{text-decoration: underline;}
+#p-info{font-size: 37px;margin: 25px 0; }
+#p-info a{color: #ea572d;}
+#p-info a:hover{text-decoration: underline;}
+#p-info span{font-size: 14px;color: #999;}
+#p-price{}
+#p-img-list{margin: 25px 0;}
+#p-img-list img{border: 1px solid #dfdfdf;margin-right: 20px;}
+#size-charts{color: #EA572D;font-size: 16px;}
+.size-cart{margin: 25px 0;}
+.choose-size{width: 120px;height: 46px;position: relative;float: left;}
+.choose-size h6{border: 1px solid #333;height: 46px;line-height: 46px;position: relative;font-size: 14px;padding-left: 20px;}
+.choose-size ul{padding: 0 20px;display: none;border: 1px solid #000;margin-top: 10px;}
+.choose-size ul li{line-height: 30px;border-bottom: 1px dashed #000;}
+.choose-size ul li:nth-child(4){border: none;}
+
+.down-sanjiao{position: absolute;right: 15px;top: 17px;}
+#add-cart-t{width: 120px;height: 46px;float: left;text-align: center;color: #fff;background: #847057;border-radius: 5px;line-height: 46px;font-size: 16px;margin-left: 20px;}
+/*main*/
+
+/*list*/
+.list{width: 1211px;margin: 90px auto;position: relative;height: 439px;overflow: hidden;}
+.list-box{overflow: hidden;position: absolute;width: 2000px;top: 0;left: 0;}
+.list-btn{position: absolute;top: 45%;left: 0;z-index: 2;height: 50px;width: 100%;overflow: hidden;}
+.list-btn a{width: 50px;height: 50px;background: rgba(0,0,0,0.5);color: #fff;float: left;display: inline-block;border-radius: 50%;line-height: 50px;text-align: center;font-size: 30px;}
+.list-btn a#right-btn{float: right;}
+.list ul{float: left;border:1px solid #E5E5E5;width: 285px;margin-right: 21px;}
+.list ul a{display: block;position: relative;}
+.list ul a:hover{border: 1px solid #EA8F2F;}
+.list ul a span{position: absolute;top: 20px;left: 20px;background: #847057;color: #fff;border-radius: 0 10px 0 10px;display: inline-block;padding: 10px 20px;}
+.list .l-img img{width: 100%;}
+.list .add-cart{height: 68px;line-height: 68px;background: #847057;text-align: center;}
+.list .add-cart a{display: block;color: #fff;}
+/*list*/
+
+.footer{background: #000;color: #fff;text-align: center;padding: 50px 0;}

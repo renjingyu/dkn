@@ -1,0 +1,32 @@
+<!DOCTYPE HTML >  
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+        <title>Index</title>  
+        <script src="template.js"></script>  
+    </head>  
+    <body>  
+        <div id="content"></div>  
+        <script id="test" type="text/html">  
+            {{if isAdmin}}  
+                <h1>{{title}}</h1>  
+                <ul>  
+                    {{each list as value index}}  
+                        <li>索引：{{index}}:{{value}}</li>  
+                    {{/each}}  
+                </ul>  
+            {{/if}}  
+        </script>  
+        <script>  
+            var data = {  
+                title : 'HELLO WORLD',  
+                isAdmin : true,  
+                list : ['新闻','军事','历史','政治']  
+            };  
+            var html = template('test', data);  
+            document.getElementById("content").innerHTML = html;  
+        </script>  
+
+        
+    </body>  
+</html>  

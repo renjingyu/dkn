@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>  
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+        <title>Index</title>  
+        <script src="template.js">  
+        </script>  
+    </head>  
+    <body>  
+    <div id="content">  
+    </div>  
+    <script id="test" type="text/html">  
+        {{ts(n)}}  
+    </script>  
+    <script>  
+        template.helper("ts", function(a){  
+            return 10 + "--" + a;  
+        });  
+        var data = {  
+            n: 123  
+        };  
+        var html = template("test", data);  
+        document.getElementById("content").innerHTML = html;  
+    </script>  
+    </div>  
+</body>  
+</html>  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--公用的-->
+    <link href="css/base.css" rel="stylesheet" />
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+
+    <!--私有的-->
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="js/index.js"></script>
+</head>
+<body style="text-align: center;">
+    
+   <h2>购物车页面</h2>
+   
+   
+   
+   <script type="text/javascript">
+		console.log(window.location.search)
+		var str = window.location.search;
+		var arr = str.split("=");
+		$.ajax({
+			type:"get",
+			url:"json/product.json",
+			async:true,
+			success:function(data){
+				$.each(data, function(index,obj) {
+					var dataCookie = $.cookie();
+					if(obj["pId"]==arr[1]){
+						$("body").append('<span style="color:red">'+obj["name"]+'</span>');
+						for (var atr in dataCookie ) {
+							 $("body").append(dataCookie[atr]+'<br>');
+						}
+						
+					}
+				});
+			}
+		});
+	</script>
+</body>
+</html>
